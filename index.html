@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Имран Сабитов</title>
+    <style>
+        /* ПРОСТЫЕ СТИЛИ */
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+        
+        .container {
+            background-color: white;
+            padding: 25px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            border: 1px solid gray;
+        }
+        
+        /* навигация */
+        nav {
+            background-color: #333;
+            padding: 10px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        
+        .nav-menu {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        
+        .nav-menu li a {
+            color: white;
+            text-decoration: none;
+            padding: 5px 10px;
+        }
+        
+        .nav-menu li a:hover {
+            background-color: #555;
+            border-radius: 5px;
+        }
+        
+        /* карточки проектов */
+        .project-card {
+            border: 1px solid #ccc;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+        }
+        
+        /* ВАШЕ ФОТО */
+        .avatar {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #333;
+            display: block;
+            margin: 20px auto;
+        }
+        
+        /* таблица */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        
+        th, td {
+            border: 1px solid #999;
+            padding: 10px;
+            text-align: left;
+        }
+        
+        th {
+            background-color: #e0e0e0;
+        }
+        
+        /* форма */
+        .contact-form {
+            background-color: #f5f5f5;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        
+        .form-group {
+            margin-bottom: 15px;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        
+        input, textarea {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        
+        .checkbox-group {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .checkbox-group input {
+            width: auto;
+        }
+        
+        .form-buttons {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        button {
+            padding: 10px 20px;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+            border-radius: 10px;
+        }
+        
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        
+        h2 {
+            color: #444;
+            border-bottom: 2px solid #ccc;
+            padding-bottom: 5px;
+        }
+        
+        /* простые маркеры для списков (точки) */
+        ul, ol {
+            padding-left: 30px;
+        }
+        
+        li {
+            list-style: disc; /* обычные точки */
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="#about">Обо мне</a></li>
+                <li><a href="#skills">Навыки</a></li>
+                <li><a href="#projects">Проекты</a></li>
+                <li><a href="#contact">Контакты</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            
+            <article id="about">
+                <h1>Сабитов Имран</h1>
+                
+                <!-- ВАШЕ ФОТО (avatar.jpg) -->
+                <img src="avatar.jpg" alt="Моя фотография" class="avatar">
+                
+                <p><strong>Привет!</strong> Меня зовут Сабитов Имран. Я учусь в 153 школе. Люблю играть в игры и учиться писать код.</p>
+                
+                <p>Я верю в силу образования. Каждый день стараюсь узнавать что-то новое. Учусь программировать.</p>
+                
+                <p>Люблю проводить время с семьей и друзьями.</p>
+                <hr>
+            </article>
+            
+            <section id="skills">
+                <h2>Мои интересы</h2>
+                <ul>
+                    <li>Веб-разработка</li>
+                    <li>Изучение языков программирования</li>
+                    <li>Чтение книг</li>
+                    <li>Путешествия</li>
+                </ul>
+                
+                <h2>Мои цели</h2>
+                <ol>
+                    <li>Стать экспертом в фронтенде</li>
+                    <li>Создать свой IT-проект</li>
+                    <li>Получить сертификат по программированию</li>
+                    <li>Выучить новые языки</li>
+                </ol>
+                <hr>
+            </section>
+            
+            <!-- ТАБЛИЦА С НАВЫКАМИ -->
+            <section id="skills-table">
+                <h2>Мои навыки</h2>
+                
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Навык</th>
+                            <th>Уровень</th>
+                            <th>Где использую</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>HTML</td>
+                            <td>4/5</td>
+                            <td>создаю страницы</td>
+                        </tr>
+                        <tr>
+                            <td>CSS</td>
+                            <td>3/5</td>
+                            <td>оформление</td>
+                        </tr>
+                        <tr>
+                            <td>JavaScript</td>
+                            <td>2/5</td>
+                            <td>учусь</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <hr>
+            </section>
+            
+            <section id="projects">
+                <h2>Мои проекты</h2>
+                
+                <div class="project-card">
+                    <h3>Сайт-визитка</h3>
+                    <p>Мой первый сайт про себя. Использовал HTML и CSS.</p>
+                </div>
+                
+                <div class="project-card">
+                    <h3>Калькулятор</h3>
+                    <p>Простой калькулятор на JavaScript.</p>
+                </div>
+                
+                <div class="project-card">
+                    <h3>Страница для друга</h3>
+                    <p>Помог другу сделать личную страницу.</p>
+                </div>
+                
+                <div style="margin: 20px 0;">
+                    <a href="#about">в начало</a> | 
+                    <a href="#contact">контакты</a> | 
+                    <a href="projects.html">еще проекты</a>
+                </div>
+                <hr>
+            </section>
+            
+            <section id="contact">
+                <h2>Связаться со мной</h2>
+                
+                <div class="contact-form">
+                    <form action="#" method="post">
+                        <div class="form-group">
+                            <label for="name">Имя:</label>
+                            <input type="text" id="name" name="name" placeholder="Твое имя">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" placeholder="пример@mail.ru">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Сообщение:</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Напиши мне..."></textarea>
+                        </div>
+                        
+                        <div class="form-group checkbox-group">
+                            <input type="checkbox" id="agree" name="agree" checked>
+                            <label for="agree">Я согласен на ответ</label>
+                        </div>
+                        
+                        <div class="form-buttons">
+                            <button type="submit">Отправить</button>
+                            <button type="reset">Очистить</button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+            
+        </div>
+    </main>
+    
+    <footer>
+        <p>© 2025 Сабитов Имран. 153 школа</p>
+        <p><a href="projects.html">проекты</a> | email: imran@school.ru</p>
+    </footer>
+    
+</body>
+</html>
